@@ -1,8 +1,9 @@
 /**************************************************
- * MKOnlinePlayer v2.2
+ * MKOnlinePlayer v2.31
  * 歌词解析及滚动模块
  * 编写：mengkun(http://mkblog.cn)
- * 时间：2017-3-26
+ * 时间：2017-9-13
+ * Edit: tuannvbg@gmail.com 2022-03-04
  *************************************************/
  
 var lyricArea = $("#lyric");    // 歌词显示容器
@@ -15,6 +16,34 @@ function lyricTip(str) {
 // 歌曲加载完后的回调函数
 // 参数：歌词源文件
 function lyricCallback(str) {
+    //if(id !== musicList[rem.playlist].item[rem.playid].id) return;  // 返回的歌词不是当前这首歌的，跳过
+    
+    rem.lyric = parseLyric(str);    // 解析获取到的歌词
+    
+    if(rem.lyric === '') {
+        lyricTip('没有歌词');
+        return false;
+    }
+    
+    lyricArea.html('');     // 清空歌词区域的内容
+    lyricArea.scrollTop(0);    // 滚动到顶部
+    
+    rem.lastLyric = -1;
+    
+    // 显示全部歌词
+    var i = 0;
+    for(var k in rem.lyric){
+        var txt = rem.lyric[k];
+        if(!txt) txt = "&nbsp;";
+        var li = $("<li data-no='"+i+"' class='lrc-item'>"+txt+"</li>");
+        lyricArea.append(li);
+        i++;
+    }
+}
+
+function lyricCallback1(str, id) {
+    if(id !== musicList[rem.playlist].item[rem.playid].id) return;  // 返回的歌词不是当前这首歌的，跳过
+    
     rem.lyric = parseLyric(str);    // 解析获取到的歌词
     
     if(rem.lyric === '') {
