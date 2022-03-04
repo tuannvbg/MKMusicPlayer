@@ -1,4 +1,7 @@
-﻿MKOnlineMusicPlayer V2.21
+MKMusicPlayer 1.0:
+I like MKOnlineMusicPlayer from https://github.com/mengkunsoft/MKOnlineMusicPlayer but player not support local music (only china music but I'm Vietnamese, I Want listen music Vietnam with lyric lrc). I edit code support local music or any hosting support direct link (example: dropbox.com) with lrc support 4 type: .lrc, .js, .json, content lrc. Demo: https://tuannvbg.github.io/MKMusicPlayer/
+
+MKOnlineMusicPlayer V2.21
 ========
 MKOnlineMusicPlayer 是一款开源的基于网易云音乐api的在线音乐播放器。具有音乐搜索、播放、下载、歌词同步显示、个人音乐播放列表同步等功能。
 
