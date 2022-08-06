@@ -1,5 +1,5 @@
 MKMusicPlayer 1.0:
-I like MKOnlineMusicPlayer from https://github.com/mengkunsoft/MKOnlineMusicPlayer but player not support local music (only china music but I'm Vietnamese, I Want listen music Vietnam with lyric lrc). I edit code support local music or any hosting support direct link (example: dropbox.com) with lrc support 4 type: .lrc, .js, .json, content lrc. Demo: https://tuannvbg.github.io/MKMusicPlayer/
+I like MKOnlineMusicPlayer from https://github.com/mengkunsoft/MKOnlineMusicPlayer but player not support local music (only china music but I'm Vietnamese, I Want listen music Vietnam with lyric lrc). I edit code support local music or any hosting support direct link (example: dropbox.com) with lrc support 4 type: .lrc, .js, .json, content lrc. Demo: https://tuannvbg.github.io/MKMusicPlayer/ Full demo: http://nhacso24h.epizy.com/player/MKOnlineMusicPlayer/
 
 MKOnlineMusicPlayer V2.21
 ========
